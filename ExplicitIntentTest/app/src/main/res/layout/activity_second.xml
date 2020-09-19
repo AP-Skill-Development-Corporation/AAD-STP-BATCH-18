@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="This is SecondActivity"
         android:textSize="30sp"
+        android:id="@+id/textView"
         />
 
 

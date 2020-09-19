@@ -8,6 +8,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!--EdiText is used for to take the
+    input from the user-->
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ediText"
+        android:hint="Enter something"
+        />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
