@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     RadioButton r_male,r_female;
     String gender;
     CheckBox ch_java,ch_android,ch_python;
+    Spinner sp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         ch_java = findViewById(R.id.javacheckbox);
         ch_android = findViewById(R.id.androidcheckbox);
         ch_python = findViewById(R.id.pythonCheckbox);
+        sp = findViewById(R.id.spinner);
         tv = findViewById(R.id.result);
     }
 
@@ -54,7 +57,9 @@ public class MainActivity extends AppCompatActivity {
         if(ch_python.isChecked()){
             builder.append(ch_python.getText().toString());
         }
-        tv.setText(name+"\n"+mobile+"\n"+email+"\n"+pass+"\n"+gender+"\n"+builder);
+        String selectedBranch = sp.getSelectedItem().toString();
+        tv.setText(name+"\n"+mobile+"\n"+email+"\n"+pass+
+                "\n"+gender+"\n"+builder+"\n"+selectedBranch);
 
     }
 }
