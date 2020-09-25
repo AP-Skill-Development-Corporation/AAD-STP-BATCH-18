@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="About"
+        android:id="@+id/about"/>
+    <item
+        android:title="Settings"
+        android:id="@+id/settings"
+        android:icon="@mipmap/setteings"
+        app:showAsAction="always"/>
+    <item
+        android:title="Privacy"
+        android:id="@+id/privacy"
+        android:icon="@drawable/lock"
+        app:showAsAction="always"/>
+    <item
+        android:title="Dial"
+        android:id="@+id/dial" />
+    <item
+        android:title="Call"
+        android:id="@+id/call" />
+</menu>
